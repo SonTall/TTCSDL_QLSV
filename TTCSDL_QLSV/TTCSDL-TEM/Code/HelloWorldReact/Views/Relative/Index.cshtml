@@ -1,4 +1,4 @@
-﻿@model IEnumerable<HelloWorldReact.Models.relative>
+﻿@model IEnumerable<HelloWorldReact.Models.showRelative>
 
 @{
     ViewBag.Title = "Index";
@@ -18,28 +18,45 @@
                     <p>
                         @Html.ActionLink("Create New", "Create")
                     </p>
+                    @using (Html.BeginForm("Index", "Relative", FormMethod.Get))
+                    {
+                    <div class="form-group form-inline">
+                        <input type="text" class="form-control" placeholder="Nhập mã thân nhân" name="code">
+                        <input type="text" class="form-control" placeholder="Nhập tên thân nhân" name="name">
+                        <input type="text" class="form-control" placeholder="Nhập mã sinh viên" name="codest">
+                        <button type="submit" class="btn btn-default">Seach</button>
+                    </div>
+
+                    @*  *@}
                     <table class="table">
                         <tr>
                             <th>
-                                @Html.DisplayNameFor(model => model.name)
+                               @* @Html.DisplayNameFor(model => model.name)*@
+                                Tên
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.dateofbirth)
+                                @*@Html.DisplayNameFor(model => model.dateofbirth)*@
+                                Ngày sinh
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.workplace)
+                              @*  @Html.DisplayNameFor(model => model.workplace)*@
+                                Nơi công tác
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.address)
+                                @*@Html.DisplayNameFor(model => model.address)*@
+                                Địa chỉ
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.placeofbirth)
+                                @*@Html.DisplayNameFor(model => model.placeofbirth)*@
+                                Nơi sinh
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.relationship)
+                                @*@Html.DisplayNameFor(model => model.relationship)*@
+                                Quan hệ
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.studentcode)
+                                @*@Html.DisplayNameFor(model => model.firstnamestudent)*@
+                                Tên sinh viên
                             </th>
                             <th></th>
                         </tr>
@@ -66,11 +83,10 @@
                                     @Html.DisplayFor(modelItem => item.relationship)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.studentcode)
+                                    @Html.DisplayFor(modelItem => item.firstnamestudent)
                                 </td>
                                 <td>
                                     @Html.ActionLink("Edit", "Edit", new { id = item.code }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.code }) |
                                     @Html.ActionLink("Delete", "Delete", new { id = item.code })
                                 </td>
                             </tr>

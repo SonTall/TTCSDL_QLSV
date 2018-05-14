@@ -127,6 +127,13 @@
   <ItemGroup>
     <Compile Include="Controllers\MajorController.cs" />
     <Compile Include="Controllers\RelativeController.cs" />
+    <Compile Include="Models\facility.cs" />
+    <Compile Include="Models\major.cs" />
+    <Compile Include="Models\showChangeClass.cs" />
+    <Compile Include="Models\showClass.cs" />
+    <Compile Include="Models\showMajor.cs" />
+    <Compile Include="Models\showRelative.cs" />
+    <Compile Include="Models\showStudent.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -191,9 +198,7 @@
     <Compile Include="Models\class.cs" />
     <Compile Include="Models\DBConnection.cs" />
     <Compile Include="Models\dbSV.cs" />
-    <Compile Include="Models\facility.cs" />
     <Compile Include="Models\level.cs" />
-    <Compile Include="Models\major.cs" />
     <Compile Include="Models\NATION_BUS.cs" />
     <Compile Include="Models\NATION_OBJ.cs" />
     <Compile Include="Models\relative.cs" />
@@ -211,6 +216,10 @@
     <Content Include="Views\Home\nation.cshtml" />
     <Content Include="Views\Relative\Index.cshtml" />
     <Content Include="Views\Relative\Create.cshtml" />
+    <Content Include="Views\Relative\Edit.cshtml" />
+    <Content Include="Views\Major\Create.cshtml" />
+    <Content Include="Views\Major\Index.cshtml" />
+    <Content Include="Views\Major\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -223,7 +232,6 @@
     <Folder Include="lte\" />
     <Folder Include="plugins\" />
     <Folder Include="ServiceManageStaff\" />
-    <Folder Include="Views\Major\" />
     <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>

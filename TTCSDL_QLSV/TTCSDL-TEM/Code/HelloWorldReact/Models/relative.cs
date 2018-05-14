@@ -52,7 +52,7 @@
         {
             dbSV db = new dbSV();
             return db.relatives.Where(x => x.name != "").ToList(); //Lấy danh sách batch. Giống với bên class
-           // return db.relatives.ToList(); //Lấy danh sách batch. Giống với bên class
+                                                                   // return db.relatives.ToList(); //Lấy danh sách batch. Giống với bên class
         }
 
         public string Insert(relative obj)
@@ -82,7 +82,7 @@
             return mess;
         }
 
-        public string Edit(relative obj)
+        public string UpdateRelative(string code, relative obj)
         {
             string mess = "";
             SqlConnection con = db.getConnection();
@@ -99,16 +99,95 @@
             cmd.Parameters.Add("@studentcode", SqlDbType.VarChar).Value = obj.studentcode;
             if (cmd.ExecuteNonQuery() == 0)
             {
-                mess = "Thêm thất bại";
+                mess = "Sửa thất bại";
             }
             else
             {
-                mess = "Thêm thành công:" + obj.name;
+                mess = "Sửa thành công:" + obj.name;
             }
             con.Close();
             return mess;
         }
 
+        public string DeleteRelativeByCode(string code)
+        {
+            string mess = "";
+            SqlConnection con = db.getConnection();
+            con.Open();
+            SqlCommand cmd = new SqlCommand("delRelativeByCode", con);
+            cmd.Parameters.Add("@code", SqlDbType.VarChar).Value = code;
+            if (cmd.ExecuteNonQuery() == 0)
+            {
+                mess = "Xóa thất bại";
+            }
+            else
+            {
+                mess = "Xóa thành công:";
+            }
+            con.Close();
+            return mess;
+        }
 
+        public relative GetRelativeByCode(string code)
+        {
+            SqlConnection con = db.getConnection();
+            con.Open();
+            //Sử dụng proc addclass đã tạo trong SQL sever
+            SqlCommand cmd = new SqlCommand("seachCodeRelative", con);
+            cmd.CommandType = CommandType.StoredProcedure; //Xác định khai báo trên là proc nằm trong StoredProcedure trong SQL
+            cmd.Parameters.Add(new SqlParameter("@code", code.Trim()));
+            DataTable ds = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds); //Ds lớp lưu đưới dạng dataTable
+            relative tmC = new relative();
+            tmC.code = ds.Rows[0]["code"].ToString();
+            tmC.name = ds.Rows[0]["name"].ToString();
+            tmC.dateofbirth = Convert.ToDateTime(ds.Rows[0]["dateofbirth"]);
+            tmC.workplace = ds.Rows[0]["workplace"].ToString();
+            tmC.address = ds.Rows[0]["address"].ToString();
+            tmC.placeofbirth = ds.Rows[0]["placeofbirth"].ToString();
+            tmC.relationship = ds.Rows[0]["relationship"].ToString();
+            tmC.studentcode = ds.Rows[0]["studentcode"].ToString();
+            //Chuyển dataTable thành dạng List
+            con.Close();
+            return tmC;
+        }
+
+        public List<showRelative> GetRelative(string code = null, string name = null, string codest = null) //Lấy danh sách lớp đưa vào dạng list
+        {
+            SqlConnection con = db.getConnection();
+            con.Open();
+            //Sử dụng proc addclass đã tạo trong SQL sever
+            SqlCommand cmd = new SqlCommand("seachRelative", con);
+            cmd.CommandType = CommandType.StoredProcedure; //Xác định khai báo trên là proc nằm trong StoredProcedure trong SQL
+            if (code == null) code = "";
+            if (name == null) name = "";
+            if (codest == null) codest = "";
+            cmd.Parameters.Add(new SqlParameter("@code", code.Trim()));
+            cmd.Parameters.Add(new SqlParameter("@name", name.Trim()));
+            cmd.Parameters.Add(new SqlParameter("@codest", codest.Trim()));
+            DataTable ds = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds); //Ds lớp lưu đưới dạng dataTable
+            List<showRelative> lRelative = new List<showRelative>();
+            showRelative tmC;
+            //Chuyển dataTable thành dạng List
+            for (int i = 0; i < ds.Rows.Count; i++)
+            {
+                tmC = new showRelative();
+                tmC.code = ds.Rows[i]["code"].ToString();
+                tmC.name = ds.Rows[i]["name"].ToString();
+                tmC.dateofbirth = Convert.ToDateTime(ds.Rows[i]["dateofbirth"]);
+                tmC.workplace = ds.Rows[i]["workplace"].ToString();
+                tmC.address = ds.Rows[i]["address"].ToString();
+                tmC.placeofbirth = ds.Rows[i]["placeofbirth"].ToString();
+                tmC.relationship = ds.Rows[i]["relationship"].ToString();
+                tmC.lastnamestudent = ds.Rows[i]["lastnamestudent"].ToString();
+                tmC.firstnamestudent = ds.Rows[i]["firstnamestudent"].ToString();
+                lRelative.Add(tmC);
+            }
+            con.Close();
+            return lRelative;
+        }
     }
 }

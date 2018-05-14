@@ -33,7 +33,6 @@
 
         public virtual facility facility { get; set; }
     }
-
     class MajorList
     {
         DBConnection db;
@@ -42,11 +41,40 @@
             db = new DBConnection();
         }
 
-        public List<relative> ListAll()
+        public List<major> ListAll()
         {
             dbSV db = new dbSV();
-            return db.relatives.Where(x => x.name != "").ToList(); //Lấy danh sách batch. Giống với bên class
+            return db.majors.Where(x => x.name != "").ToList(); //Lấy danh sách batch. Giống với bên class
                                                                    // return db.relatives.ToList(); //Lấy danh sách batch. Giống với bên class
+        }
+
+        public List<showMajor> getData(string code = null, string name = null)
+        {
+            SqlConnection con = db.getConnection();
+            con.Open();
+            //Sử dụng proc addclass đã tạo trong SQL sever
+            SqlCommand cmd = new SqlCommand("seachMajor", con);
+            cmd.CommandType = CommandType.StoredProcedure; //Xác định khai báo trên là proc nằm trong StoredProcedure trong SQL
+            if (code == null) code = "";
+            if (name == null) name = "";
+            cmd.Parameters.Add(new SqlParameter("@code", code.Trim()));
+            cmd.Parameters.Add(new SqlParameter("@name", name.Trim()));
+            DataTable ds = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds); //Ds lớp lưu đưới dạng dataTable
+            List<showMajor> list = new List<showMajor>();
+            showMajor tmC;
+            //Chuyển dataTable thành dạng List
+            for (int i = 0; i < ds.Rows.Count; i++)
+            {
+                tmC = new showMajor();
+                tmC.code = ds.Rows[i]["code"].ToString();
+                tmC.name = ds.Rows[i]["name"].ToString();
+                tmC.facilityname = ds.Rows[i]["facilityname"].ToString();
+                list.Add(tmC);
+            }
+            con.Close();
+            return list;
         }
 
         public string Insert(major obj)
@@ -55,14 +83,10 @@
             SqlConnection con = db.getConnection();
             con.Open();
             SqlCommand cmd = new SqlCommand("addmajor", con);
-            //cmd.CommandType = CommandType.StoredProcedure;
-            //cmd.Parameters.Add("@name", SqlDbType.VarChar).Value = obj.name;
-            //cmd.Parameters.Add("@dateofbirth", SqlDbType.DateTime).Value = obj.dateofbirth;
-            //cmd.Parameters.Add("@workplace", SqlDbType.NVarChar).Value = obj.name;
-            //cmd.Parameters.Add("@address", SqlDbType.NVarChar).Value = obj.address;
-            //cmd.Parameters.Add("@placeofbirth", SqlDbType.NVarChar).Value = obj.placeofbirth;
-            //cmd.Parameters.Add("@relationship", SqlDbType.NVarChar).Value = obj.relationship;
-            //cmd.Parameters.Add("@studentcode", SqlDbType.VarChar).Value = obj.studentcode;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@code", SqlDbType.VarChar).Value = obj.code;
+            cmd.Parameters.Add("@name", SqlDbType.VarChar).Value = obj.name;
+            cmd.Parameters.Add("@facilitycode", SqlDbType.VarChar).Value = obj.facilitycode;
             //cmd.Parameters.Add("@lockdate", SqlDbType.DateTime).Value = obj.LOCKDATE;
             if (cmd.ExecuteNonQuery() == 0)
             {
@@ -74,6 +98,97 @@
             }
             con.Close();
             return mess;
+        }
+
+
+        public string UpdateMajor(string code, major obj)
+        {
+            string mess = "";
+            SqlConnection con = db.getConnection();
+            con.Open();
+            SqlCommand cmd = new SqlCommand("updatemajor", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@code", SqlDbType.VarChar).Value = code;
+            cmd.Parameters.Add("@newcode", SqlDbType.VarChar).Value = obj.code;
+            cmd.Parameters.Add("@name", SqlDbType.VarChar).Value = obj.name;
+            cmd.Parameters.Add("@facilitycode", SqlDbType.VarChar).Value = obj.facilitycode;
+            if (cmd.ExecuteNonQuery() == 0)
+            {
+                mess = "Sửa thất bại";
+            }
+            else
+            {
+                mess = "Sửa thành công:" + obj.name;
+            }
+            con.Close();
+            return mess;
+        }
+
+        public string DeleteMajorByCode(string code)
+        {
+            string mess = "";
+            SqlConnection con = db.getConnection();
+            con.Open();
+            SqlCommand cmd = new SqlCommand("delMajor", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@code", SqlDbType.VarChar).Value = code;
+            if (cmd.ExecuteNonQuery() == 0)
+            {
+                mess = "Xóa thất bại";
+            }
+            else
+            {
+                mess = "Xóa thành công:";
+            }
+            con.Close();
+            return mess;
+        }
+
+        public major GetMajorByCode(string code)
+        {
+            SqlConnection con = db.getConnection();
+            con.Open();
+            //Sử dụng proc addclass đã tạo trong SQL sever
+            SqlCommand cmd = new SqlCommand("seachCodeMajor", con);
+            cmd.CommandType = CommandType.StoredProcedure; //Xác định khai báo trên là proc nằm trong StoredProcedure trong SQL
+            cmd.Parameters.Add(new SqlParameter("@code", code.Trim()));
+            DataTable ds = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds); //Ds lớp lưu đưới dạng dataTable
+            major tmC = new major();
+            tmC.code = ds.Rows[0]["code"].ToString();
+            tmC.name = ds.Rows[0]["name"].ToString();
+            tmC.facilitycode = ds.Rows[0]["facilitycode"].ToString();
+            //Chuyển dataTable thành dạng List
+            con.Close();
+            return tmC;
+        }
+
+        public List<showMajor> GetMajor(string code = null, string name = null) //Lấy danh sách lớp đưa vào dạng list
+        {
+            SqlConnection con = db.getConnection();
+            con.Open();
+            //Sử dụng proc addclass đã tạo trong SQL sever
+            SqlCommand cmd = new SqlCommand("searchMajor", con);
+            cmd.CommandType = CommandType.StoredProcedure; //Xác định khai báo trên là proc nằm trong StoredProcedure trong SQL
+            cmd.Parameters.Add(new SqlParameter("@code", code.Trim()));
+            cmd.Parameters.Add(new SqlParameter("@name", name.Trim()));
+            DataTable ds = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds); //Ds lớp lưu đưới dạng dataTable
+            List<showMajor> lMajor = new List<showMajor>();
+            showMajor tmC;
+            //Chuyển dataTable thành dạng List
+            for (int i = 0; i < ds.Rows.Count; i++)
+            {
+                tmC = new showMajor();
+                tmC.code = ds.Rows[i]["code"].ToString();
+                tmC.name = ds.Rows[i]["name"].ToString();
+                tmC.facilityname = ds.Rows[i]["facilityname"].ToString();
+                lMajor.Add(tmC);
+            }
+            con.Close();
+            return lMajor;
         }
     }
 }
