@@ -1,0 +1,97 @@
+﻿@model HelloWorldReact.Models.relative
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="container" class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Thêm lớp</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            <h4>Thêm lớp </h4>
+                            <hr />
+                            @Html.ValidationSummary(true)
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.code, "Mã thân nhân:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.code, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.code)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.name, "Tên thân nhân:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.name, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.dateofbirth, "Ngày sinh:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.dateofbirth, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.workplace, "Nơi làm việc:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.workplace, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.address, "Địa chỉ:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.address, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.placeofbirth, "Nơi sinh:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.address, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.relationship, "Relationship?:", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(model => model.address, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.studentcode, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownListFor(model => model.studentcode, ViewBag.studentcode as SelectList, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    @Html.ValidationMessageFor(model => model.studentcode)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Create" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div>
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>

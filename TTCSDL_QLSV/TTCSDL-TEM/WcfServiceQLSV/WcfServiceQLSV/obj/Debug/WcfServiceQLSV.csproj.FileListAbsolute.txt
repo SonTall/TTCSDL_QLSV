@@ -1,0 +1,7 @@
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\obj\Debug\WcfServiceQLSV.csprojAssemblyReference.cache
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\obj\Debug\WcfServiceQLSV.csproj.CoreCompileInputs.cache
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\bin\WcfServiceQLSV.dll.config
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\bin\WcfServiceQLSV.dll
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\bin\WcfServiceQLSV.pdb
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\obj\Debug\WcfServiceQLSV.dll
+D:\Desktop\Template-master\WcfServiceQLSV\WcfServiceQLSV\obj\Debug\WcfServiceQLSV.pdb

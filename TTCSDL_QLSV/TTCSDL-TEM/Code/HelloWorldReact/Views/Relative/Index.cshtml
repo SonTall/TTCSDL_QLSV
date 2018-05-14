@@ -1,0 +1,84 @@
+﻿@model IEnumerable<HelloWorldReact.Models.relative>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="container" class="content-wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Danh sách thân nhân</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+
+                    <p>
+                        @Html.ActionLink("Create New", "Create")
+                    </p>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.dateofbirth)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.workplace)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.address)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.placeofbirth)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.relationship)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.studentcode)
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.dateofbirth)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.workplace)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.placeofbirth)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.relationship)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.studentcode)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.code }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.code }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.code })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

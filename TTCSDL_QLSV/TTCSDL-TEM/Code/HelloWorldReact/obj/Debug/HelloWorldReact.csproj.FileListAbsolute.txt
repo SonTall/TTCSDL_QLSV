@@ -1,0 +1,161 @@
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\HelloWorldReact.dll.config
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\HelloWorldReact.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\HelloWorldReact.pdb
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\JavaScriptEngineSwitcher.Core.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\JavaScriptEngineSwitcher.Jint.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\JavaScriptEngineSwitcher.Msie.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\Jint.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\JSPool.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\Microsoft.Web.Infrastructure.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\MsieJavaScriptEngine.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\Newtonsoft.Json.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.Web.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.Web.Mvc4.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Helpers.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Mvc.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Razor.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.Deployment.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.Razor.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\WebActivatorEx.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\JSPool.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\Newtonsoft.Json.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.Web.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\React.Web.Mvc4.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Razor.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.Deployment.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Webpages.Razor.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Helpers.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\System.Web.Mvc.xml
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\obj\Debug\HelloWorldReact.csprojResolveAssemblyReference.cache
+D:\uyennm\teach\database\Sample\HelloWorldReact\obj\Debug\HelloWorldReact.dll
+D:\uyennm\teach\database\Sample\HelloWorldReact\obj\Debug\HelloWorldReact.pdb
+E:\C# and web\Template\Code\HelloWorldReact\bin\HelloWorldReact.dll.config
+E:\C# and web\Template\Code\HelloWorldReact\bin\HelloWorldReact.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\HelloWorldReact.pdb
+E:\C# and web\Template\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Core.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Jint.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Msie.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\Jint.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\JSPool.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\Microsoft.Web.Infrastructure.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\MsieJavaScriptEngine.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\Newtonsoft.Json.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.Web.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.Web.Mvc4.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Helpers.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Mvc.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Razor.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\WebActivatorEx.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\JSPool.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\Newtonsoft.Json.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.Web.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\React.Web.Mvc4.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Razor.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Helpers.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\System.Web.Mvc.xml
+E:\C# and web\Template\Code\HelloWorldReact\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+E:\C# and web\Template\Code\HelloWorldReact\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+E:\C# and web\Template\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csprojResolveAssemblyReference.cache
+E:\C# and web\Template\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CoreCompileInputs.cache
+E:\C# and web\Template\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CopyComplete
+E:\C# and web\Template\Code\HelloWorldReact\obj\Debug\HelloWorldReact.dll
+E:\C# and web\Template\Code\HelloWorldReact\obj\Debug\HelloWorldReact.pdb
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\HelloWorldReact.dll.config
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\HelloWorldReact.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\HelloWorldReact.pdb
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\EntityFramework.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\EntityFramework.SqlServer.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Core.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Jint.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Msie.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\Jint.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\JSPool.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\Microsoft.Web.Infrastructure.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\MsieJavaScriptEngine.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\Newtonsoft.Json.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.Web.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.Web.Mvc4.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Helpers.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Mvc.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Razor.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\WebActivatorEx.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\EntityFramework.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\EntityFramework.SqlServer.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\JSPool.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\Newtonsoft.Json.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.Web.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\React.Web.Mvc4.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Razor.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Helpers.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\System.Web.Mvc.xml
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csprojAssemblyReference.cache
+D:\Desktop\Template-master\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CoreCompileInputs.cache
+D:\Desktop\Template-master\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CopyComplete
+D:\Desktop\Template-master\Code\HelloWorldReact\obj\Debug\HelloWorldReact.dll
+D:\Desktop\Template-master\Code\HelloWorldReact\obj\Debug\HelloWorldReact.pdb
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\HelloWorldReact.dll.config
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\HelloWorldReact.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\HelloWorldReact.pdb
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\EntityFramework.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\EntityFramework.SqlServer.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Core.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Jint.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Msie.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\Jint.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\JSPool.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\MsieJavaScriptEngine.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\Newtonsoft.Json.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.Web.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.Web.Mvc4.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Helpers.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Mvc.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Razor.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\WebActivatorEx.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\EntityFramework.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\EntityFramework.SqlServer.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\JSPool.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\Newtonsoft.Json.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.Web.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\React.Web.Mvc4.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Razor.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Helpers.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\System.Web.Mvc.xml
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CoreCompileInputs.cache
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csproj.CopyComplete
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\obj\Debug\HelloWorldReact.dll
+C:\Users\Dev\Desktop\TTCSDL-TEM\Code\HelloWorldReact\obj\Debug\HelloWorldReact.pdb
